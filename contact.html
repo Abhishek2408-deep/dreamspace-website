@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - DreamSpace</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: 100%;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('images/bg-office.jpg') no-repeat center center/cover;
+      filter: blur(6px);
+      z-index: -1;
+    }
+
+    .container {
+  max-width: 700px;
+  margin: 60px auto;
+  background: rgba(255, 255, 255, 0.65); /* Semi-transparent */
+  backdrop-filter: blur(5px);           /* Smooth blur on background */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 25px;
+  color: #1a237e;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-info a {
+  color: #1a237e;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #1a237e;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #3949ab;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 14px;
+      background-color: #1a237e;
+      color: white;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #303f9f;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background"></div> <!-- Background image -->
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form>
+      <label for="fullname">Full Name *</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number *</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="message">Your Message *</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+   
+  <div class="contact-info">
+    <h2>📍 Our Contact Details</h2>
+    <p><strong>👤 Name:</strong>Abhishek Mishra </p>
+    <p><strong>✉️ Email:</strong> <a href="abhishek290801@email.com">abhishek290801@email.com</a></p>
+    <p><strong>📞 Phone:</strong> <a href="tel:+91838203305">+91838203305</a></p>
+    <p><strong>🏢 Office:</strong> Delhi,South Delhi, 110301</p>
+    <p><strong>🕒 Hours:</strong>  All Day 9am to 11pm</p>
+  </div>
+  
+  
+</body>
+</html>
