@@ -176,3 +176,55 @@ footer {
 .contact-form button:hover {
   background-color: #3949ab;
 }
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #005bb5;
+}
+
+.card-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.service-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffffd5; /* slightly transparent white */
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.projects img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
