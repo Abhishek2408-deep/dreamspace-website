@@ -1,3 +1,4 @@
+
 /* Reset */
 * {
   margin: 0;
@@ -14,10 +15,10 @@ body {
 
 /* Container */
 .container {
-  width: 90%;
+  width: 95%;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 0rem 0;
 }
 
 /* Navigation */
@@ -40,7 +41,7 @@ header {
 }
 
 .nav a {
-  margin-left: 20px;
+  margin-left: 12px;
   text-decoration: none;
   color: #1a237e;
   font-weight: 500;
@@ -108,8 +109,8 @@ header {
 .contact {
   background-color: #e8eaf6;
   text-align: center;
-  padding: 80px 20px;
-  min-height: 400px; /* Makes sure there's enough vertical space */
+  padding: 10px 11px;
+  min-height: 25px; /* Makes sure there's enough vertical space */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -119,10 +120,10 @@ header {
 .contact .btn {
   background-color: #1a237e;
   color: #fff;
-  padding: 14px 30px;
-  border-radius: 30px;
+  padding: 8px 11px;
+  border-radius: 10px;
   text-decoration: none;
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: inline-block;
 }
 
@@ -130,8 +131,8 @@ header {
 /* Footer */
 footer {
   background-color: #1a237e;
-  color: white;
-  padding: 40px 20px;
+  color: rgb(231, 241, 247);
+  padding: 0.1px 0.1px;
   text-align: center;
   font-size: 0.9rem;
 }
@@ -227,4 +228,132 @@ footer {
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  font-size: 28px;
+  padding: 14px 16px;
+  z-index: 100;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+}
+
+.float-email,
+.float-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.float-email {
+  right: 90px;
+  background-color: #1a237e;
+}
+
+.float-whatsapp {
+  right: 20px;
+  background-color: #25d366;
+}
+
+.float-email:hover {
+  background-color: #3949ab;
+}
+
+.float-whatsapp:hover {
+  background-color: #128c7e;
+}
+
+/* Existing CSS */
+
+/* Floating Footer */
+.floating-footer {
+  position: fixed;
+  bottom: 30px; /* Adjust as needed to avoid overlap with WhatsApp */
+  left: 30px; /* Align with the left floating buttons */
+  background-color: #25D366; /* Same as WhatsApp button */
+  color: white;
+  width: 60px; /* Same width as WhatsApp button */
+  height: 60px; /* Same height as WhatsApp button */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 998; /* Ensure it's below the main floating buttons if needed */
+  text-decoration: none; /* If you want to make the whole thing a link */
+  transition: background-color 0.3s ease;
+}
+
+.floating-footer:hover {
+  background-color: #128C7E; /* Same hover effect as WhatsApp */
+}
+
+.floating-footer .container {
+  text-align: center; /* Center the text within the circle */
+  padding: 0; /* Remove default container padding */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-footer p {
+  margin: 0; /* Remove default paragraph margins */
+  font-size: 0.8em; /* Adjust text size as needed */
+}
+
+/* Adjust left position if your floating buttons are on the right */
+/* If your WhatsApp button is on the right, use: */
+/* .floating-footer {
+  left: auto;
+  right: 30px;
+} */form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+
+form button {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
 }
